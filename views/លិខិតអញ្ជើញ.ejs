@@ -140,7 +140,7 @@
                             <td style="text-align: center;"><%= product[i].FNum %></td>
                             <td style="text-align: center;"><%= product[i].title %> </td>
                             <td style="text-align: center;"><%= product[i].Filetype %></td> 
-                            <td style="text-align: center;">
+                            <td id="description_Underline">
                                 <form action ="https://filemanagementsystem-7c8u.onrender.com/edit-filepage" method="GET">
                                     <input type="hidden" name="prodId" value="<%= product[i].id%>">
                                     <button type="submit" style="background: none; border: 0px;font-weight: normal;font-size: medium;"><%= product[i].description %></button>
