@@ -233,14 +233,14 @@
                                                             <%= product[i]?.etc %>
                                                         </span></div>
                                                     <div style="margin-left: 200px;">
-                                                    <form action="http://localhost:3000/delete" method="POST"
+                                                    <form action="https://filemanagementsystem-7c8u.onrender.com/delete" method="POST"
                                                         style="float: right;">
                                                         <input type="hidden" name="prodId" value="<%= product[i]?.id%>">
                                                         <button class="btn btn-danger" type="submit"
                                                             style="width: 100px;"><i
                                                                 class="fa fa-trash"></i>delete</button>
                                                     </form>
-                                                    <form action="http://localhost:3000/edit-filepage" method="GET"
+                                                    <form action="https://filemanagementsystem-7c8u.onrender.com/edit-filepage" method="GET"
                                                         style="float: right;">
                                                         <input type="hidden" name="prodId" value="<%= product[i]?.id%>">
                                                         <button type="submit" class="btn btn-warning"
