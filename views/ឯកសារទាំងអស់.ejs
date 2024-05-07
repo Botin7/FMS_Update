@@ -37,13 +37,13 @@
 
         <td>
             <div class="background"><br>
-                <form action="http://localhost:3000/all"> <button style="background: none;border-color: #efefef;"><img id="logo" src="../public/assets/img/Moeys.png" alt="" srcset=""> 
+                <form action="https://filemanagementsystem-7c8u.onrender.com/all"> <button style="background: none;border-color: #efefef;"><img id="logo" src="../public/assets/img/Moeys.png" alt="" srcset=""> 
                 
                           </button> <br><span id="brandName">ប្រព័ន្ធគ្រប់គ្រងឯកសារ</span></form>
                 <br><br>
                          
 
-                <button id="click1">ធ្វើបច្ចុប្បន្នភាព</button><form action="http://localhost:3000/add-product"><button id="click">បញ្ចូលលិខិត</button></form> <br><br><br><br>
+                <button id="click1">ធ្វើបច្ចុប្បន្នភាព</button><form action="https://filemanagementsystem-7c8u.onrender.com0/add-product"><button id="click">បញ្ចូលលិខិត</button></form> <br><br><br><br>
 
                 <form class="search" action="search" method="POST" >
                     <input type="text" placeholder="ស្វែងរកឯកសារ....." name="search2">
@@ -51,7 +51,7 @@
                     </form>
 
                 <% if (username == "admin2021") { %>
-                    <form action="http://localhost:3000/admin-Page"><button type="submit" id="adminBtn">Go to Admin Panel</button></form>
+                    <form action="https://filemanagementsystem-7c8u.onrender.com/admin-Page"><button type="submit" id="adminBtn">Go to Admin Panel</button></form>
                  <% } %>
 
                     <br><br>
@@ -151,7 +151,7 @@
                                     <td style="text-align: center;"><%= product[i].title %> </td>
                                     <td style="text-align: center;"><%= product[i].Filetype %> </td>
                                     <td id="description_Underline">
-                                        <form action ="http://localhost:3000/edit-filepage" method="GET" style="float: right;">
+                                        <form action ="https://filemanagementsystem-7c8u.onrender.com/edit-filepage" method="GET" style="float: right;">
                                             <input type="hidden" name="prodId" value="<%= product[i].id%>">
                                             <button type="submit" style="background: none;border: 0px;font-weight: normal;font-size: medium;float: left;"><%= product[i].description %></button>
                                         </form>
