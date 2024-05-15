@@ -6,7 +6,7 @@ const pizzaShecma= new mongoose.Schema({
         required: false
     },
     ID: {
-        type: Number,
+        type: String,
         required: false
     },
     category: {
@@ -30,11 +30,11 @@ const pizzaShecma= new mongoose.Schema({
         required: false
     },
     FID: {
-        type: Number,
+        type: String,
         required: false
     },
     FNum: {
-        type: Number,
+        type: String,
         required: false
     },
     price: {
