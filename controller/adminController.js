@@ -6,7 +6,6 @@ exports.getHomePage = (req, res, next) => {
   addPizza
     .find()
     .then((product) => {
-      console.log(product);
       res.render("លិខិតស្នើសុំថវិកាចំណាយ", {
         product: product,
         title: "Online Ordering Pizza",
