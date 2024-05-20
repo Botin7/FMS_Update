@@ -114,7 +114,6 @@ exports.getAllFile = (req, res, next) => {
         .skip(perPage * page - perPage)
         .limit(perPage)
         .then((product) => {
-          console.log(product);
           console.log("lll", product.length);
           res.render("ឯកសារទាំងអស់", {
             product: product,
