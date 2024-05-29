@@ -393,6 +393,7 @@ width: 230px;
   }
   .pagination #active {
     text-decoration: underline;
+    text-decoration-color:white;
     background: rgb(2, 100, 164);
     border-radius: 50%;
   }
