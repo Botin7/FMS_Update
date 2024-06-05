@@ -17,7 +17,6 @@ exports.getProductForm = (req, res, next) => {
 
 exports.postProduct = (req, res, next) => {
     const title = req.body.title;
-    const ID = req.body.ID;
     const FID = req.body.FID;
     const FNum = req.body.FNum;
     const description = req.body.description;
@@ -43,7 +42,6 @@ exports.postProduct = (req, res, next) => {
         title:title,
         FID: FID,
         FNum: FNum,
-        ID: ID,
         description : description,
         category : category,
         Filetype : Filetype,
@@ -77,7 +75,6 @@ exports.editProductPage = (req, res, next) => {
 
 exports.editProductPost = (req, res, next) => {
     const Updatefile = new addPizza(
-        req.body.id,
         req.body.title,
         req.body.FID,
         req.body.FNum,
