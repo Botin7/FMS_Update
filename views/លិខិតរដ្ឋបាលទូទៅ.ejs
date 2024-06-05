@@ -137,12 +137,11 @@
                     <div class="product_section">  
                                     
                         <tbody> 
-                                
+                          <% let rowNumber = 1; %> <!-- Initialize a row counter -->       
                          <% for( let i = 0; i < product.length; i++ ) { %>
                             <% if (product[i].category =="លិខិតរដ្ឋបាលទូទៅ") { %>
                                 <tr>
-                        
-                                    <td style="text-align: center;"><%= product[i].ID %></td>
+                                    <td style="text-align: center;"><%= rowNumber++ %></td> <!-- Increment the row counter -->
                                     <td style="text-align: center;"><%= product[i].FID %></td>
                                     <td style="text-align: center;"><%= product[i].FNum %></td>
                                     <td style="text-align: center;"><%= product[i].title %> </td>
