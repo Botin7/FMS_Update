@@ -12,16 +12,17 @@
 <body>
   <br><br>
   <div id="container">
-    <div id="container"> 
     <div id="loginlogo" class="login-logo mb-5">
       <img src="../public/assets/img/Moeys.png" alt="" width="50px" style="margin-right: 20px;">
       <h3>ចុះឈ្មោះចូលប្រើប្រាស់ប្រព័ន្ធ FMS</h3>
   </div>
   <form action="https://filemanagementsystem-7c8u.onrender.com/register" method="POST"><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ឈ្មោះអ្នកប្រើ: <input type="text" name="username" /> <br/><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; លេខសម្ងាត់:  <input type="password" name="password" /> <br/><br>
-    បញ្ជាក់លេខសម្ងាត់: &nbsp; <input type="password" name="confirm_password" /> <br/><br>
+    <form action="http://localhost:3000/register" method="POST"><br>
+    <input type="text" name="username" placeholder="ឈ្មោះអ្នកប្រើ" style="height: calc(1.5em + 1.5rem + 2px); border-radius: 0.6rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0;width: 100%;"/><br>
+     <input type="password" name="password" placeholder="លេខសម្ងាត់" style="height: calc(1.5em + 1.5rem + 2px);width: 100%;" /><br>
+    <input type="password" name="confirm_password" placeholder="បញ្ជាក់លេខសម្ងាត់" style="height: calc(1.5em + 1.5rem + 2px); border-radius: 0; border-bottom-left-radius: 0.6rem; border-right: none;width: 100%;"/><br><br>
     <button  type="submit" style="color: blue;height: 30px;">ចុះឈ្មោះ</button>
+  </form>
   </form>
   <h2>មានគណនីរួចហើយ?<form action="/signin" style="display: inline;"><button id="register" ><u>ចូលប្រើប្រាស់</u> </button> </form></h2>
   <br><br>
