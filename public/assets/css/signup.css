@@ -12,6 +12,7 @@
 }
 h2{
     font-size: medium;
+     font-family: Khmer OS SiemReap;
 }
 .login-logo {
     display: flex;
@@ -22,6 +23,7 @@ h2{
 body{
     
        background: linear-gradient(45deg, #3f51b5, #00bcd4);
+     font-family: Khmer OS SiemReap;
 }
 #register{
     border: 0px;
