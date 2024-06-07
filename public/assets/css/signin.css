@@ -21,7 +21,7 @@
   }
  body{
      
-         background-image: url("../img/preview16.jpg");
+         background: linear-gradient(45deg, #3f51b5, #00bcd4);
  }
  #register{
      border: 0px;
