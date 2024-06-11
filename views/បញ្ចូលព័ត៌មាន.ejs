@@ -54,7 +54,11 @@
                         Admin
                         </a>
                         <img src="../public/assets/img/profile.jpg" width="40"height="40" alt="nice" class="rounded-circle mr-3">
-                        <a href="#" class="text-white ">Botin SREY </a>
+                        <% if (!username) { %>
+                                User
+                            <% } else{ %>
+                                <%=username%>
+                            <% } %>  
                         <div class="border-bottom pb-3"></div>
                         <ul class="navbar-nav flex-column mt-4">
                             <li class="nav-item">
