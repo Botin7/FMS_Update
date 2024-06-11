@@ -259,6 +259,7 @@ exports.getadminPage = async (req, res, next) => {
             product: product,
             pageTitle: "Add Product",
             current: page,
+            username: req.cookies["username"],
             length: product.length,
             pages: Math.ceil(count / perPage),
           });
