@@ -35,7 +35,7 @@
 
 </head>
 
-<body style="background-color:rgb(99, 99, 131) ;">
+<body style="background:linear-gradient(45deg, #3f51b5, #00bcd4)">
 
 
     <!-- navbar -->
@@ -54,11 +54,13 @@
                         Admin
                         </a>
                         <img src="../public/assets/img/profile.jpg" width="40"height="40" alt="nice" class="rounded-circle mr-3">
-                        <% if (!username) { %>
+                       <a href="/UserProfile" class="text-white ">
+                            <% if (!username) { %>
                                 User
                             <% } else{ %>
                                 <%=username%>
                             <% } %>  
+                         </a>
                         <div class="border-bottom pb-3"></div>
                         <ul class="navbar-nav flex-column mt-4">
                             <li class="nav-item">
