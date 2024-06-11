@@ -6,8 +6,17 @@ const addPizza = require('../models/addPizza.model');
 
 
 exports.getProductForm = (req, res, next) => {
-    if(req.cookies["username"] == "admin2021") {
-        res.render('បញ្ចូលព័ត៌មាន', { name: 'Botin', path: '/all-product', pageTitle: 'Add Product' });
+      if(req.cookies["username"] == "admin2021") {
+        addPizza
+      .find()
+      .then((product) => {
+        res.render("បញ្ចូលព័ត៌មាន", {
+          product: product,
+          title: "Input Information",
+          username: req.cookies["username"],
+          path: '/all-product'
+        });
+      })
     } 
     else {
         res.write("You are not an admin, imposter!");
